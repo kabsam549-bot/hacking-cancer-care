@@ -33,9 +33,9 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center bg-[var(--color-navy)] text-white overflow-hidden"
+      className="relative min-h-screen flex flex-col items-center justify-center bg-[var(--color-navy)] text-white overflow-hidden px-6"
     >
-      {/* Subtle grid pattern */}
+      {/* Subtle grid */}
       <div
         className="absolute inset-0 opacity-[0.03]"
         style={{
@@ -45,56 +45,66 @@ export default function Hero() {
         }}
       />
 
-      {/* Red accent glow */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-[var(--color-accent)] opacity-[0.06] rounded-full blur-[120px]" />
+      {/* Red glow */}
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-[var(--color-accent)] opacity-[0.05] rounded-full blur-[100px]" />
 
-      <div className="relative z-10 max-w-3xl mx-auto px-6 text-center">
-        <p className="text-xs uppercase tracking-[0.3em] text-white/50 mb-8">
+      <div className="relative z-10 w-full max-w-2xl mx-auto text-center">
+        <p className="text-[11px] uppercase tracking-[0.3em] text-white/40 mb-10">
           MD Anderson Cancer Center
         </p>
-        <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight leading-[1.05] mb-3">
+
+        <h1 className="text-[3.25rem] sm:text-6xl md:text-7xl font-bold tracking-[-0.02em] leading-[1.05]">
           Hacking
-          <br />
-          <span className="text-[var(--color-accent)]">Cancer Care</span>
         </h1>
-        <p className="text-lg sm:text-xl text-white/60 font-light mb-2">
-          AIDH Mini Hackathon
-        </p>
-        <p className="text-sm text-white/40 mb-10">
-          Saturday, May 2, 2026
-        </p>
+        <h1 className="text-[3.25rem] sm:text-6xl md:text-7xl font-bold tracking-[-0.02em] leading-[1.05] text-[var(--color-accent)]">
+          Cancer Care
+        </h1>
+
+        <div className="mt-5 mb-10">
+          <p className="text-base sm:text-lg text-white/50 font-light">
+            AIDH Mini Hackathon
+          </p>
+          <p className="text-sm text-white/30 mt-1">
+            Saturday, May 2, 2026
+          </p>
+        </div>
 
         {/* Countdown */}
-        <div className="flex items-center justify-center gap-3 sm:gap-6 mb-12">
+        <div className="inline-flex items-center gap-2 sm:gap-4 mb-12">
           {[
             { value: days, label: "Days" },
-            { value: hours, label: "Hours" },
+            { value: hours, label: "Hrs" },
             { value: minutes, label: "Min" },
             { value: seconds, label: "Sec" },
-          ].map((unit) => (
-            <div key={unit.label} className="text-center">
-              <div className="w-16 sm:w-20 h-16 sm:h-20 bg-white/[0.06] backdrop-blur-sm border border-white/10 rounded-xl flex items-center justify-center">
-                <span className="text-2xl sm:text-3xl font-bold font-mono tabular-nums">
-                  {String(unit.value).padStart(2, "0")}
+          ].map((unit, i) => (
+            <div key={unit.label} className="flex items-center gap-2 sm:gap-4">
+              <div className="text-center">
+                <div className="w-14 sm:w-[4.5rem] h-14 sm:h-[4.5rem] bg-white/[0.05] border border-white/[0.08] rounded-xl flex items-center justify-center">
+                  <span className="text-xl sm:text-2xl font-semibold font-mono tabular-nums text-white/90">
+                    {String(unit.value).padStart(2, "0")}
+                  </span>
+                </div>
+                <span className="text-[9px] sm:text-[10px] uppercase tracking-widest text-white/30 mt-1.5 block">
+                  {unit.label}
                 </span>
               </div>
-              <span className="text-[10px] sm:text-xs uppercase tracking-wider text-white/40 mt-2 block">
-                {unit.label}
-              </span>
+              {i < 3 && (
+                <span className="text-white/20 text-lg font-light mb-4">:</span>
+              )}
             </div>
           ))}
         </div>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
           <a
             href="#register"
-            className="px-8 py-3.5 bg-[var(--color-accent)] text-white font-semibold text-sm rounded-lg hover:bg-[var(--color-accent-light)] transition-colors"
+            className="w-full sm:w-auto px-8 py-3 bg-[var(--color-accent)] text-white font-semibold text-sm rounded-lg hover:brightness-110 transition-all"
           >
             Register Now
           </a>
           <a
             href="#about"
-            className="px-8 py-3.5 border border-white/15 text-white/80 font-medium text-sm rounded-lg hover:bg-white/5 transition-colors"
+            className="w-full sm:w-auto px-8 py-3 border border-white/12 text-white/70 font-medium text-sm rounded-lg hover:bg-white/5 transition-all"
           >
             Learn More
           </a>
