@@ -8,7 +8,7 @@ export default function About() {
         <div className="space-y-5 text-lg text-[var(--color-text-muted)] leading-relaxed">
           <p>
             Hacking Cancer Care is MD Anderson&apos;s inaugural AI and Digital Health
-            hackathon -- a single-day, beginner-friendly event where 60
+            hackathon -- a single-day, beginner-friendly event where 40
             participants from across the institution come together to tackle real
             challenges in cancer care delivery.
           </p>
@@ -27,7 +27,7 @@ export default function About() {
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
           {[
-            { num: "60", label: "Participants" },
+            { num: "40", label: "Participants" },
             { num: "4", label: "Challenge Areas" },
             { num: "1", label: "Day" },
             { num: "10+", label: "Mentors" },

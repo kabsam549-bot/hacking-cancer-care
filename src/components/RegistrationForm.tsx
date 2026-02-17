@@ -194,7 +194,7 @@ export default function RegistrationForm() {
           Register
         </h2>
         <p className="text-[var(--color-text-muted)] mb-10">
-          Takes about 5 minutes. 60 spots available.
+          Takes about 5 minutes. 40 spots available.
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-6">
