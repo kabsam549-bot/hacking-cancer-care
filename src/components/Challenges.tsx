@@ -6,15 +6,15 @@ const challenges = [
   {
     num: "01",
     title: "The Information Gap",
-    subtitle: "Patient Education & Health Literacy",
+    subtitle: "Simulated Education",
     hook: "A patient hears \"stage III.\" Ten minutes later, they can't remember what it means.",
     short:
       "Patients retain only 20-40% of what's communicated during an oncology consultation. They leave appointments uncertain about what was discussed, what comes next, and what to watch for. The raw materials for better education exist inside our systems -- they're just not assembled in a way that meets the patient where they are.",
     detail:
-      "Design a solution that ensures a cancer patient leaves a clinical encounter actually understanding their diagnosis, treatment plan, and next steps -- in language that works for them. Pick a specific patient and a specific moment: the newly diagnosed patient after their first consult, the patient starting chemo for the first time, the family caregiver who wasn't in the room.",
+      "Design a tool or experience that helps cancer patients understand their diagnosis, treatment plan, and self-care -- in language and formats that actually work for them. Pick a specific patient and a specific moment: the newly diagnosed patient after their first consult, the patient starting chemo for the first time, the family caregiver who wasn't in the room.",
     examples: [
       "AI-generated plain-language visit summary delivered to MyChart within an hour",
-      "Nurse-led 3-minute post-appointment teach-back protocol",
+      "Interactive treatment timeline that adapts to the patient's literacy level",
       "Multimedia education module triggered at chemo check-in, tailored to the regimen",
       "Caregiver digest: a brief summary emailed to the patient's care partner",
     ],
@@ -27,7 +27,7 @@ const challenges = [
     short:
       "15-30% of oncology patients are readmitted within 30 days -- and a significant share of those readmissions are preventable. Unmanaged side effects, medication confusion, missed follow-ups, delayed escalation. Many MD Anderson patients don't live locally; they're discharged to hotels, long drives, and unfamiliar cities.",
     detail:
-      "Design a solution that actively supports oncology patients in the critical 72 hours after discharge. Reduce preventable readmissions, improve medication adherence and side-effect monitoring, and make sure patients know exactly when and how to raise the alarm. Pick your population: the post-surgical patient, the first-time chemo discharge, the patient on complex oral regimens at home.",
+      "Design a solution that supports patients navigating the transition from hospital to home. Reduce preventable readmissions, improve medication adherence and side-effect monitoring, and make sure patients know exactly when and how to raise the alarm. Pick your population: the post-surgical patient, the first-time chemo discharge, the patient on complex oral regimens at home.",
     examples: [
       "Automated 48-hour text check-in with structured symptom questions and triage escalation",
       "Personalized one-page discharge document generated from Epic, translated, listing the five things to watch for",
@@ -37,34 +37,34 @@ const challenges = [
   },
   {
     num: "03",
-    title: "The Conversation That Changes Everything",
-    subtitle: "Physician-Patient Communication",
-    hook: "\"You have cancer.\" Everything said after that sentence gets harder to hear.",
+    title: "The Bottleneck",
+    subtitle: "Resource Allocation Throughput",
+    hook: "A patient waits three weeks for a scan that could have been scheduled in three days.",
     short:
-      "Delivering a diagnosis. Presenting treatment options to someone with a poor prognosis. Transitioning to palliative care. These are among the most consequential conversations in medicine -- and the least well-supported by existing tools. Patients leave pivotal consultations without a clear understanding of what they were asked to decide.",
+      "Cancer care at a major academic center involves dozens of handoffs across radiology, surgery, medical oncology, radiation oncology, and support services. Scheduling bottlenecks, resource misallocation, and communication gaps create delays that have real clinical consequences. The systems are deeply interconnected, and fixing one step often shifts the burden somewhere else.",
     detail:
-      "Design a solution that meaningfully improves one specific communication moment in cancer care. The new diagnosis conversation. The treatment decision. The goals-of-care discussion. The clinical trial consent. Pick the moment, design for that patient, and make the conversation land the way it should.",
+      "Design a solution that creates better channels for meaningful dialogue and shared decision-making around resource allocation. Improve how patients, providers, and operational teams coordinate to reduce wait times, eliminate redundant steps, and get patients to the right resource at the right time.",
     examples: [
-      "Pre-visit intake: patients list their top questions and primary concern, surfaced to the physician before they walk in",
-      "Post-visit audio summary: AI-generated recap of key decisions and next steps, available in MyChart within 24 hours",
-      "Visual shared decision-making aid for a specific treatment choice",
-      "Communication training module for fellows using de-identified case transcripts with AI feedback",
+      "New patient coordination dashboard showing all scheduled and pending consultations in one view",
+      "AI-assisted scheduling optimizer that identifies open slots across multiple departments",
+      "Real-time bed and resource tracker visible to care navigators and attendings simultaneously",
+      "Automated escalation system for scheduling delays that exceed clinical safety thresholds",
     ],
   },
   {
     num: "04",
     title: "The Weight of the Work",
-    subtitle: "Cancer Care Workflow Optimization",
+    subtitle: "Cancer Research Workflow Optimization",
     hook: "For every hour of patient care, clinicians spend two on paperwork. Something has to give.",
     short:
-      "Documentation, prior authorizations, scheduling coordination across five subspecialties, care navigation for newly diagnosed patients. The operational tax on cancer care is enormous -- and it falls hardest on the people who should be spending their time with patients. The systems are deeply interconnected, and fixing one step often just shifts the burden somewhere else.",
+      "Documentation, protocol compliance, data collection, IRB coordination, clinical trial enrollment. The operational tax on cancer research and clinical workflows is enormous -- and it falls hardest on the people who should be spending their time advancing science and treating patients.",
     detail:
-      "Design a solution that meaningfully reduces one specific administrative or operational burden in cancer care. Choose one workflow, one role, one failure point. The best solutions here don't just save time -- they prevent errors and handoff failures without creating new ones. Be specific. Solve one thing well.",
+      "Design a solution that streamlines clinical operations to reduce administrative burden and improve efficiency. Choose one workflow, one role, one failure point. The best solutions here don't just save time -- they prevent errors and handoff failures without creating new ones. Be specific. Solve one thing well.",
     examples: [
       "AI-drafted prior authorization letters pre-populated from Epic, ready for one-click review and submission",
-      "Smart discharge checklist that auto-populates from Epic and updates in real time for nurse and resident",
+      "Automated clinical trial eligibility screening from existing patient data",
       "NLP tool that drafts responses to common patient portal messages for physician review",
-      "New patient coordination dashboard showing all scheduled and pending consultations in one view",
+      "Smart protocol compliance tracker that flags deviations before they become audit findings",
     ],
   },
 ];

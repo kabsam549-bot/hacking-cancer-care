@@ -26,10 +26,10 @@ const skillOptions = [
 ];
 
 const challengeOptions = [
-  "Patient Education & Health Literacy",
+  "Simulated Education",
   "Post-Discharge Care Coordination",
-  "Physician-Patient Communication",
-  "Workflow Optimization",
+  "Resource Allocation Throughput",
+  "Cancer Research Workflow Optimization",
   "Open to any",
 ];
 
