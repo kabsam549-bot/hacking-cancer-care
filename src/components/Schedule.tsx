@@ -1,4 +1,4 @@
-const events = [
+const events: { time: string; title: string; type: string; desc?: string }[] = [
   { time: "8:00 AM", title: "Check-in & Breakfast", type: "break" },
   { time: "8:30 AM", title: "Opening Keynote", type: "main" },
   { time: "9:00 AM", title: "Challenge Briefing & Team Formation", type: "main" },
