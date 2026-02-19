@@ -33,7 +33,7 @@ const faqs = [
   },
   {
     q: "Who organizes this?",
-    a: "The AIDH (AI/Digital Health) Committee at MD Anderson Cancer Center, with support from institutional leadership.",
+    a: "The AI & Digital Health Committee at MD Anderson Cancer Center, with support from institutional leadership.",
   },
 ];
 

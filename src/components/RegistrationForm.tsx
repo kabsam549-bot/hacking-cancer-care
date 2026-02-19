@@ -407,7 +407,7 @@ export default function RegistrationForm() {
               className="mt-1 accent-[var(--color-accent)]"
             />
             <span className="text-sm text-[var(--color-text-muted)]">
-              Keep me updated about future AIDH events and hackathons
+              Keep me updated about future AI & Digital Health events and hackathons
             </span>
           </label>
 

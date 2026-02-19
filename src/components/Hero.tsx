@@ -62,7 +62,7 @@ export default function Hero() {
 
         <div className="mt-5 mb-10">
           <p className="text-base sm:text-lg text-white/50 font-light">
-            AIDH Mini Hackathon
+            AI & Digital Health Mini Hackathon
           </p>
           <p className="text-sm text-white/30 mt-1">
             Saturday, May 2, 2026

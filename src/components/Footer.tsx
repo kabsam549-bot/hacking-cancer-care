@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="py-12 bg-[var(--color-navy)] text-white/60">
       <div className="max-w-4xl mx-auto px-6 text-center">
         <p className="text-sm">
-          Organized by the Association for Intelligent Design in Healthcare (AIDH) at MD Anderson Cancer Center
+          Organized by the AI & Digital Health Committee at MD Anderson Cancer Center
         </p>
         <p className="text-xs mt-3 text-white/40">
           Questions?{" "}

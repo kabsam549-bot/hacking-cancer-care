@@ -40,7 +40,7 @@ export default function Nav({ activeSection }: { activeSection: string }) {
         >
           HCC
           <span className="hidden sm:inline text-[10px] font-normal tracking-wider uppercase ml-2 opacity-50">
-            AIDH Hackathon
+            AI & DH Hackathon
           </span>
         </a>
 
