@@ -45,7 +45,6 @@ const dietaryOptions = [
   "None",
 ];
 
-const shirtSizes = ["XS", "S", "M", "L", "XL", "XXL"];
 
 function MultiSelect({
   options,
@@ -103,7 +102,6 @@ export default function RegistrationForm() {
   const [dietary, setDietary] = useState<string[]>([]);
   const [dietaryOther, setDietaryOther] = useState("");
   const [accessibility, setAccessibility] = useState("");
-  const [tshirt, setTshirt] = useState("");
   const [why, setWhy] = useState("");
   const [mailingList, setMailingList] = useState(false);
   const [consent, setConsent] = useState(false);
@@ -149,7 +147,6 @@ export default function RegistrationForm() {
           digitalHealthExp,
           dietary: [...dietary, dietaryOther].filter(Boolean).join(", "),
           accessibility,
-          tshirt,
           why,
           mailingList,
         }),
@@ -364,25 +361,6 @@ export default function RegistrationForm() {
               className="input"
               placeholder="Let us know how we can accommodate you"
             />
-          </Field>
-
-          <Field label="T-shirt Size">
-            <div className="flex flex-wrap gap-2">
-              {shirtSizes.map((s) => (
-                <button
-                  key={s}
-                  type="button"
-                  onClick={() => setTshirt(s)}
-                  className={`w-12 h-10 rounded-lg text-sm border transition-colors ${
-                    tshirt === s
-                      ? "bg-[var(--color-accent)] text-white border-[var(--color-accent)]"
-                      : "bg-white text-[var(--color-text-muted)] border-gray-200 hover:border-gray-300"
-                  }`}
-                >
-                  {s}
-                </button>
-              ))}
-            </div>
           </Field>
 
           <Field label="In one sentence, why do you want to participate?">
