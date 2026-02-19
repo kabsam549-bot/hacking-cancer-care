@@ -7,21 +7,28 @@ export default function About() {
         </h2>
         <div className="space-y-5 text-lg text-[var(--color-text-muted)] leading-relaxed">
           <p>
-            Hacking Cancer Care is MD Anderson&apos;s inaugural AI and Digital Health
-            hackathon -- a single-day, beginner-friendly event where 40
-            participants from across the institution come together to tackle real
+            Hacking Cancer Care is MD Anderson&apos;s inaugural AI and Digital
+            Health hackathon. Forty participants from across the institution
+            come together for a single, beginner-friendly day to tackle real
             challenges in cancer care delivery.
           </p>
           <p>
-            Teams of 5-6 people -- trainees, faculty, technologists, APPs, and
-            operations staff -- will choose one of four challenge areas and spend
-            the day developing practical, implementable solutions. No coding
-            experience required. Mentors and no-code tools are provided.
+            Teams of 5&ndash;6 people &mdash; trainees, faculty, technologists,
+            APPs, and operations staff &mdash; choose one of four challenge
+            areas and spend the day developing practical, implementable
+            solutions. No coding experience required. Mentors and no-code tools
+            are provided.
           </p>
           <p>
             This is not a coding competition. It is a structured environment for
-            creative problem-solving, built for people who see problems in cancer
-            care every day and want dedicated time to fix them.
+            creative problem-solving, built for people who see problems in
+            cancer care every day and want dedicated time to fix them.
+          </p>
+          <p>
+            Breakfast and lunch are provided. At the end of the day, teams
+            present their solutions to a panel of expert judges from across MD
+            Anderson. Top teams receive awards and institutional exposure to
+            help move their ideas forward.
           </p>
         </div>
 

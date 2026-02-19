@@ -6,8 +6,8 @@ const events = [
   { time: "12:00 PM", title: "Lunch & Midday Check-in", type: "break" },
   { time: "12:30 PM", title: "Hacking Continues", type: "hack" },
   { time: "3:00 PM", title: "Pitch Prep Workshop", type: "main" },
-  { time: "4:00 PM", title: "Final Presentations", desc: "3 minutes per team", type: "main" },
-  { time: "5:00 PM", title: "Judging & Awards", type: "main" },
+  { time: "4:00 PM", title: "Final Presentations", type: "main" },
+  { time: "5:00 PM", title: "Expert Judging & Awards", type: "main" },
   { time: "5:30 PM", title: "Closing & Networking", type: "break" },
 ];
 
@@ -19,7 +19,7 @@ export default function Schedule() {
           Schedule
         </h2>
         <p className="text-[var(--color-text-muted)] mb-12">
-          Saturday, May 2, 2026 -- One full day, start to finish.
+          Saturday, May 2, 2026 &mdash; One full day, start to finish.
         </p>
 
         <div className="relative">
