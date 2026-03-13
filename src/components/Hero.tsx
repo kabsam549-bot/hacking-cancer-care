@@ -60,13 +60,23 @@ export default function Hero() {
           Cancer Care
         </h1>
 
-        <div className="mt-5 mb-10">
+        <div className="mt-6 mb-10">
           <p className="text-base sm:text-lg text-white/50 font-light">
             AI & Digital Health Mini Hackathon
           </p>
-          <p className="text-sm text-white/30 mt-1">
-            Saturday, May 2, 2026
-          </p>
+          <div className="inline-flex items-center gap-3 mt-4 px-5 py-2.5 border border-[var(--color-accent)]/30 rounded-full bg-[var(--color-accent)]/[0.08]">
+            <svg className="w-4 h-4 text-[var(--color-accent)] opacity-80" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <rect x="3" y="4" width="18" height="18" rx="2" />
+              <path d="M16 2v4M8 2v4M3 10h18" />
+            </svg>
+            <span className="text-sm sm:text-base font-medium tracking-wide text-white/80">
+              Friday, May 2, 2026
+            </span>
+            <span className="text-xs text-white/40">|</span>
+            <span className="text-xs sm:text-sm text-white/50">
+              1MC, MD Anderson
+            </span>
+          </div>
         </div>
 
         {/* Countdown */}
