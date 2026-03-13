@@ -33,7 +33,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col items-center justify-center bg-[var(--color-navy)] text-white overflow-hidden px-6"
+      className="relative min-h-[100svh] flex flex-col items-center justify-center bg-[var(--color-navy)] text-white overflow-hidden px-6 py-16"
     >
       {/* Subtle grid */}
       <div
@@ -49,20 +49,24 @@ export default function Hero() {
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-[var(--color-accent)] opacity-[0.05] rounded-full blur-[100px]" />
 
       <div className="relative z-10 w-full max-w-2xl mx-auto text-center">
-        <p className="text-[11px] uppercase tracking-[0.3em] text-white/40 mb-10">
+        <p className="text-[11px] uppercase tracking-[0.3em] text-white/40 mb-6 sm:mb-10">
           MD Anderson Cancer Center
         </p>
 
-        <h1 className="text-[3.25rem] sm:text-6xl md:text-7xl font-bold tracking-[-0.02em] leading-[1.05]">
+        <h1 className="text-[2.75rem] sm:text-6xl md:text-7xl font-bold tracking-[-0.02em] leading-[1.05]">
           Hacking
         </h1>
-        <h1 className="text-[3.25rem] sm:text-6xl md:text-7xl font-bold tracking-[-0.02em] leading-[1.05] text-[var(--color-accent)]">
+        <h1 className="text-[2.75rem] sm:text-6xl md:text-7xl font-bold tracking-[-0.02em] leading-[1.05] text-[var(--color-accent)]">
           Cancer Care
         </h1>
 
-        <div className="mt-6 mb-10">
-          <p className="text-base sm:text-lg text-white/50 font-light">
-            AI & Digital Health Mini Hackathon
+        <p className="mt-4 text-[0.95rem] sm:text-lg text-white/60 font-light tracking-wide">
+          One day. Real problems. Actionable solutions.
+        </p>
+
+        <div className="mt-4 sm:mt-6 mb-8 sm:mb-10">
+          <p className="text-sm sm:text-base text-white/40 font-light">
+            AI &amp; Digital Health Mini Hackathon
           </p>
           <div className="inline-flex items-center gap-3 mt-4 px-5 py-2.5 border border-[var(--color-accent)]/30 rounded-full bg-[var(--color-accent)]/[0.08]">
             <svg className="w-4 h-4 text-[var(--color-accent)] opacity-80" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -80,7 +84,7 @@ export default function Hero() {
         </div>
 
         {/* Countdown */}
-        <div className="inline-flex items-center gap-2 sm:gap-4 mb-12">
+        <div className="inline-flex items-center gap-2 sm:gap-4 mb-8 sm:mb-12">
           {[
             { value: days, label: "Days" },
             { value: hours, label: "Hrs" },
