@@ -68,16 +68,16 @@ export default function Hero() {
           <p className="text-sm sm:text-base text-white/40 font-light">
             AI &amp; Digital Health Mini Hackathon
           </p>
-          <div className="inline-flex items-center gap-3 mt-4 px-5 py-2.5 border border-[var(--color-accent)]/30 rounded-full bg-[var(--color-accent)]/[0.08]">
-            <svg className="w-4 h-4 text-[var(--color-accent)] opacity-80" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <div className="inline-flex items-center gap-3 mt-4 px-6 py-3 border border-[var(--color-accent)]/40 rounded-full bg-[var(--color-accent)]/[0.1]">
+            <svg className="w-5 h-5 text-[var(--color-accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <rect x="3" y="4" width="18" height="18" rx="2" />
               <path d="M16 2v4M8 2v4M3 10h18" />
             </svg>
-            <span className="text-sm sm:text-base font-medium tracking-wide text-white/80">
-              Friday, May 2, 2026
+            <span className="text-base sm:text-lg font-semibold tracking-wide text-white">
+              May 2, 2026
             </span>
-            <span className="text-xs text-white/40">|</span>
-            <span className="text-xs sm:text-sm text-white/50">
+            <span className="text-white/30">|</span>
+            <span className="text-sm sm:text-base text-white/60 font-medium">
               1MC, MD Anderson
             </span>
           </div>
