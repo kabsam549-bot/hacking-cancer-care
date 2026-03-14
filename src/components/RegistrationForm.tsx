@@ -26,10 +26,10 @@ const skillOptions = [
 ];
 
 const challengeOptions = [
-  "Simulated Education",
-  "Post-Discharge Care Coordination",
-  "Resource Allocation Throughput",
-  "Cancer Research Workflow Optimization",
+  "Challenge 1: Reducing Preventable Readmissions in Oncology",
+  "Challenge 2: Simulated Education for Cancer Care Teams",
+  "Challenge 3: Accelerating Research Efficiency in Oncology",
+  "Challenge 4: Improving Patient Throughput in Cancer Care Operations",
   "Open to any",
 ];
 
