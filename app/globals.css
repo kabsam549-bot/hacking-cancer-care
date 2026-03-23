@@ -1,0 +1,97 @@
+@import "tailwindcss";
+@config "../tailwind.config.ts";
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+  --navy-900: #111111;
+  --navy-800: #1a1a1a;
+  --accent-600: #cc0000;
+  --accent-500: #e53e3e;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Fade-in animation for scroll observer */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.65s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.65s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Form styles */
+.form-input {
+  @apply w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-accent-500 focus:ring-1 focus:ring-accent-500 transition-colors text-sm;
+}
+
+.form-label {
+  @apply block text-sm font-medium text-gray-300 mb-1.5;
+}
+
+.form-select {
+  @apply w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 text-gray-900 focus:outline-none focus:border-accent-500 focus:ring-1 focus:ring-accent-500 transition-colors text-sm appearance-none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%239ca3af'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+  padding-right: 40px;
+}
+
+/* Timeline connector */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 28px;
+  bottom: -1px;
+  width: 1px;
+  background: linear-gradient(to bottom, #e53e3e, transparent);
+}
+
+.timeline-item:last-child::before {
+  display: none;
+}
+
+/* Accordion */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.accordion-content.open {
+  max-height: 500px;
+}
+
+/* Custom checkbox */
+input[type="checkbox"].custom-check {
+  @apply w-4 h-4 rounded border-gray-300 bg-gray-50 checked:bg-accent-500 checked:border-accent-500 focus:ring-accent-500 focus:ring-offset-0 focus:ring-1 cursor-pointer;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+  background: #cc0000;
+  border-radius: 3px;
+}
